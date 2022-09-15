@@ -7,6 +7,7 @@ Ressources:
   WebServerSecurityGroups:
     Type: AWS::EC2::SecurityGroup
     Properties:
+      GroupDescription: Allow HTTP and SSH 
       SecurityGroupIngress:
       - IpProtocol: tcp
         FromPort: 80
